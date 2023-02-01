@@ -4,6 +4,16 @@ y lo muestro por 'ID' al presionar el botón 'mostrar'
 */
 function mostrar()
 {
-	alert("ok");
+	
+//declaro mi variable
+	let datoIngresado;
+	let cajita
+//pido dato
+	datoIngresado =prompt("Ingresar dato")
+
+//accedo a la cajita
+document.getElementById("txtIdNombre").value =datoIngresado
+
+	//alert("ok");
 }
 
