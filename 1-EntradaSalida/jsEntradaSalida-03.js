@@ -35,7 +35,7 @@ function mostrar()
 
 	resultadoFinal= precio + porcentaje;
 
-	mensaje= descripcion + " el precio es: " + resultadoFinal;
+	mensaje= (descripcion + " el precio es: " + resultadoFinal);
 
 	alert(mensaje);
 
