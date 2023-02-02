@@ -66,7 +66,7 @@ precioUno=parseInt (precioUno);
 precioDos=parseInt(precioDos);
 precioTres=parseInt(precioTres);
 
-suma= (precioUno + precioDos + precioTres  );
+suma= (precioUno + precioDos + precioTres  )
 iva= suma * 21 /100;
 
 
