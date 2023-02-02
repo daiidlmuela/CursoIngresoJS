@@ -10,6 +10,7 @@ function Sumar ()
     let precioUno;
     let precioDos;
     let precioTres;
+    let resultado;
     let mensaje;
     
 
@@ -21,9 +22,10 @@ precioUno=parseInt (precioUno);
 precioDos=parseInt(precioDos);
 precioTres=parseInt(precioTres);
 
-mensaje= ("La suma es " + precioUno + precioDos + precioTres);
+resultado = precioUno + precioDos + precioTres;
+mensaje= "La suma es " + resultado ;
 
-alert (mensaje);
+console.log(mensaje);
 }
 function Promedio () 
 {
@@ -33,13 +35,13 @@ function Promedio ()
     let suma;
     let mensaje;
 
-precioUno=document.getElementById("txtIdPrecioUno").value;
-precioDos=document.getElementById("txtIdPrecioDos").value;
-precioTres=document.getElementById("txtIdPrecioTres").value;
+precioUno = document.getElementById("txtIdPrecioUno").value;
+precioDos = document.getElementById("txtIdPrecioDos").value;
+precioTres = document.getElementById("txtIdPrecioTres").value;
 
-precioUno=parseInt (precioUno);
-precioDos=parseInt(precioDos);
-precioTres=parseInt(precioTres);
+precioUno = parseInt (precioUno);
+precioDos = parseInt(precioDos);
+precioTres = parseInt(precioTres);
 
 
 suma= (precioUno + precioDos + precioTres);
@@ -47,7 +49,7 @@ promedio= suma/3;
 
 mensaje= ("Resultado con promedio: " + promedio);
 
-alert (mensje);
+console.log(mensaje);
 
 
 
@@ -60,7 +62,9 @@ function PrecioFinal ()
     let suma;
     let iva;
     let mensaje;
+    let precioFinal;
 
+    iva= 21;
 precioUno=document.getElementById("txtIdPrecioUno").value;
 precioDos=document.getElementById("txtIdPrecioDos").value;
 precioTres=document.getElementById("txtIdPrecioTres").value;
@@ -69,11 +73,12 @@ precioUno=parseInt (precioUno);
 precioDos=parseInt(precioDos);
 precioTres=parseInt(precioTres);
 
-suma= (precioUno + precioDos + precioTres);
-iva= suma + suma * 0.21;
+suma= precioUno + precioDos + precioTres;
 
-mensaje= ("La suma final con IVA (21%) es " + suma + iva);
+precioFinal= suma + ( suma * iva / 100);
 
-alert (mensaje)
+mensaje= ("La suma final con IVA (21%) es " + precioFinal);
+
+console.log (mensaje);
 
 }
