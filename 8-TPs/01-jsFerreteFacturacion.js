@@ -21,9 +21,9 @@ precioUno=parseInt (precioUno);
 precioDos=parseInt(precioDos);
 precioTres=parseInt(precioTres);
 
-mensaje= (precioUno + precioDos + precioTres)
+mensaje= ("La suma es " + precioUno + precioDos + precioTres);
 
-alert (mensaje)
+alert (mensaje);
 }
 function Promedio () 
 {
@@ -31,7 +31,7 @@ function Promedio ()
     let precioDos;
     let precioTres;
     let suma;
-    
+    let mensaje;
 
 precioUno=document.getElementById("txtIdPrecioUno").value;
 precioDos=document.getElementById("txtIdPrecioDos").value;
@@ -42,10 +42,12 @@ precioDos=parseInt(precioDos);
 precioTres=parseInt(precioTres);
 
 
-suma= (precioUno + precioDos + precioTres)
+suma= (precioUno + precioDos + precioTres);
 promedio= suma/3; 
 
-alert (promedio)
+mensaje= ("Resultado con promedio: " + promedio);
+
+alert (mensje);
 
 
 
@@ -57,6 +59,7 @@ function PrecioFinal ()
     let precioTres;
     let suma;
     let iva;
+    let mensaje;
 
 precioUno=document.getElementById("txtIdPrecioUno").value;
 precioDos=document.getElementById("txtIdPrecioDos").value;
@@ -66,9 +69,11 @@ precioUno=parseInt (precioUno);
 precioDos=parseInt(precioDos);
 precioTres=parseInt(precioTres);
 
-suma= (precioUno + precioDos + precioTres  )
-iva= suma * 21 /100;
+suma= (precioUno + precioDos + precioTres);
+iva= suma + suma * 0.21;
 
+mensaje= ("La suma final con IVA (21%) es " + suma + iva);
 
-alert (suma + iva)
+alert (mensaje)
+
 }
