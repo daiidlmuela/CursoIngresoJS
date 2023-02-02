@@ -12,23 +12,30 @@ function mostrar()
 	//mensaje = "Vos te llamas " +nombreIngresado
 
 	//alert(mensaje);
+}
 
+function mostrar()
+{
+	
 	//ejercicio 3bis
 
 	let descripcion;
 	let precio;
 	let mensaje;
 	let porcentaje;
-	
+	let resultadoFinal;
 
-	descripcion = prompt("Crema de manos");
-	precio = prompt(document.getElementById("txtIdNombre").value);
+	porcentaje= 30;
+	descripcion = prompt("Ingrese descripcion del producto: ");
+	precio = document.getElementById("txtIdNombre").value;
 
-	precio = 500;
-	porcetaje = precio * 30/100;
+	precio = parseInt(precio);
 
+	porcetaje = precio + porcentaje /100;
 
-	mensaje= (descripcion + " su precio es " + porcentaje);
+	resultadoFinal= precio + porcentaje;
+
+	mensaje= descripcion + " el precio es: " + resultadoFinal;
 
 	alert(mensaje);
 
