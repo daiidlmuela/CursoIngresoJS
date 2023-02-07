@@ -7,7 +7,7 @@ function mostrar()
 	//id nombre txtIdNombre
 	//id edad txtIdEdad
 
-	let nombreIngresado;
+	/*let nombreIngresado;
 	let edadIngresada;
 	let mensaje;
 
@@ -15,6 +15,26 @@ function mostrar()
 	edadIngresada =document.getElementById("txtIdEdad").value;
 	mensaje="Usted se llama "+ nombreIngresado + " y tiene " +edadIngresada +" años";
 
-	alert(mensaje);
+	alert(mensaje);*/
 }
 
+function mostrar()
+{
+
+	/* Ejercicio 5.bis: 
+ se debe mostrar un mensaje :
+ "Perez , usted se llama jose y tiene 66 años"
+se debe optener el apellido , de la manera que puedan */
+
+//Daiana de la muela
+//ejercicio 5 bit
+
+let nombre;
+let
+
+
+
+
+
+
+}
