@@ -20,10 +20,14 @@ let mensaje;
 let precioUnitario;
 let marca;
 let precioTotal;
+let porcentaje;
+let aumento;
+let precioImpuesto;
 
-
+aumento = 10;
 precioUnitario = 35;
 descuento = 50;
+porcentaje = 0;
 
 cantidad = document.getElementById("txtIdCantidad").value;
 cantidad = parseInt(cantidad);
@@ -33,59 +37,44 @@ marca = document.getElementById("Marca").value;
 
 if(cantidad >=6)
 {
-   precioTotal = precioUnitario * cantidad ;
-   precioTotal = precioTotal * descuento/100;
-   // precioFinal = total - descuento; 
-
-   // mensaje = total;
-    document.getElementById("txtIdprecioDescuento").value = precioTotal;
-
-} else if(cantidad ==5 && marca == "ArgentinaLuz")
-  {  descuento = 1- 40/100;
-    precioTotal= precioUnitario * cantidad;
-    precioTotal = precioTotal * descuento;
-
-    document.getElementById("txtIdprecioDescuento").value = precioTotal;
-    
-} 
-    else if(cantidad ==5 && marca != "ArgentinaLuz")
- {descuento = 1 - 30/100;
- precioTotal= precioUnitario * cantidad;
-precioTotal = precioTotal * descuento;
-
-document.getElementById("txtIdprecioDescuento").value = precioTotal;
-} else if (cantidad == 4 && marca == "ArgentinaLuz" || "FelipeLamparas")
-{
-    descuento = 1 - 25/100;
-    precioTotal= precioUnitario * cantidad;
-   precioTotal = precioTotal * descuento;
-   
-   document.getElementById("txtIdprecioDescuento").value = precioTotal;
-
-}else if (cantidad == 4 && (marca != "ArgentinaLuz" || marca != "FelipeLamparas"))
-{ 
-    descuento =  20/100;
-    precioTotal= precioUnitario * cantidad;
-   precioTotal = precioTotal * descuento; //me da mal el resultado
-   
-   document.getElementById("txtIdprecioDescuento").value = precioTotal;
-
-}else if(cantidad == 3 && marca == "ArgentinaLuz")
-{
-    descuento = 1 -  15/100;
-    precioTotal= precioUnitario * cantidad;
-   precioTotal = precioTotal * descuento;//me da mal el resultado
-   
-   document.getElementById("txtIdprecioDescuento").value = precioTotal;
-
-
+   descuento =50;
+} else if(cantidad ==5) { 
+    if (marca == "ArgentinaLuz"){
+        descuento = 40;
+    }else{
+        descuento = 30;
+    }
+} else if (cantidad == 4 ) {
+     if( marca == "ArgentinaLuz" || marca == "FelipeLamparas" ){
+     descuento = 25;
+ }  else{ 
+    descuento= 20;
 }
+} else if(cantidad == 3)
+    if (marca == "ArgentinaLuz"){
+    descuento =  15;
+} else if (marca == "FelipeLamparas"){
+    descuento = 10;
+} else {
+    descuento =5;
+}else {
+descuento = 0;
 }
 
 
+ precioUnitario = precioUnitario * descuento/100;
+ precioTotal = precioUnitario - descuento;
+
+ mensaje = "$ "+ precioTotal;
+
+ if( precioTotal >= 120){
+    impuesto = precioTotal * aumento /100;
+    precioImpuesto = precioTotal + aumento;
+
+    alert ("Usted pago $ " + precioImpuesto + "  de IIBB, siento $ " + impuesto + " El impuesto que se pago");
+}
+    document.getElementById("txtIdprecioDescuento").value=mensaje;
 
 
 
-
-
-
+}
