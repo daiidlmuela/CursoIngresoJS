@@ -14,13 +14,13 @@ si es Diciembre: "Felices fiesta!!!."*/
 	switch(mesDelAño)
 	{
 		case "Enero":
-			mensaje = "que comiences bien el año!!!."
+			mensaje = "Que comiences bien el año!!!."
 			break;
 		case "Marzo":
-			mensaje = "a clases!!!."
+			mensaje = "A clases!!!."
 			break;
 		case "Julio":
-			mensaje = "se vienen las vacaciones!!!."
+			mensaje = "Se vienen las vacaciones!!!."
 			break;
 		case "Diciembre":
 			mensaje = "Felices fiesta!!!."
