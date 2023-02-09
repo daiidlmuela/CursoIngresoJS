@@ -43,7 +43,7 @@ if (velocidad == 60)
 	alert (mensaje)
 }else if(velocidad == 100)
 	{
-		mensaje = velocidad + " Buen ritmo";
+		mensaje = velocidad + " Buen ritmo"
 		alert(mensaje)
 	}
 }
