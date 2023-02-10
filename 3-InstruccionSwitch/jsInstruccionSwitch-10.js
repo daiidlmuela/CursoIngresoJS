@@ -24,7 +24,8 @@ function mostrar()
 		case "Verano":
 			switch(destino)
 		{
-			case "Cataratas" || "Mar del plata":
+			case "Cataratas":
+			case "Mar del plata":
 				mensaje = "Se viaja";
 				break;
 			default: 
@@ -35,7 +36,7 @@ function mostrar()
 		case "Verano":
 			switch(destino)
 		{
-			case "Cataratas" :
+			case "Cataratas":
 			case "Mar del plata":
 				mensaje = "Se viaja";
 				break;
