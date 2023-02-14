@@ -25,13 +25,7 @@ si tiene 31 días. */
 		default:
 			mensaje = "Tiene 31 dias"
 	}
-
-
-
 	alert(mensaje);
 	
-	
-
-
 
 }//FIN DE LA FUNCIÓN

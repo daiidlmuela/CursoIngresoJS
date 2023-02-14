@@ -8,11 +8,11 @@ function mostrar()
 	let estadia;
 	let precioFinal;
 
-	estacionIngresada = document.getElementById ("txtIdEstacion").value;
-	destinoIngresado = document.getElementById("txtIdDestino").value;
-
 	estadia = 15000;
 	porcentaje = 0;
+
+	estacionIngresada = document.getElementById ("txtIdEstacion").value;
+	destinoIngresado = document.getElementById("txtIdDestino").value;
 
 	switch(estacionIngresada)
 	{
@@ -40,7 +40,8 @@ function mostrar()
 				case "Bariloche":
 					porcentaje = -20;
 					break;
-				case "Cataratas" || "Cordoba":
+				case "Cataratas":
+				case "Cordoba":
 					porcentaje = 10;
 					break;
 				case "Mar del plata":
@@ -48,7 +49,8 @@ function mostrar()
 					break;
 			}
 			break;
-		case "Otoño " && "Primavera":
+		case "Otoño ":
+		case "Primavera":
 				switch (destinoIngresado)
 				{
 					case "Bariloche":

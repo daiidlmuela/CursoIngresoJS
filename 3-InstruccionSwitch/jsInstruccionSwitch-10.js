@@ -2,7 +2,7 @@ function mostrar()
 {
 
 
-
+	let mensaje;
 	let estacionIngresada;
 	let destino;
 

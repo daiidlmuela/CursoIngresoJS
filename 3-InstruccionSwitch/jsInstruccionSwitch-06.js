@@ -10,28 +10,28 @@ function mostrar()
 	let mensaje;
 	let horaDelDia;
 
-	horaDelDia= document.getElementById("txtIdHora").value;
-
+	horaDelDia = document.getElementById("txtIdHora").value;
+	horaDelDia = parseInt (horaDelDia)
 
 	if (horaDelDia >=0 && horaDelDia <=24 ){ 
 		switch(horaDelDia)
 	{  		
-		case "7":
-		case "8":
-		case "9":
-		case "10":
-		case "11":
+		case 7:
+		case 8:
+		case 9:
+		case 10:
+		case 11:
 			mensaje = "Es de mañana."
 			break;
 
-		case "12":
-		case "13":
-		case "14":
-		case "15":
-		case "16":
-		case "17":
-		case "18":
-		case "19":
+		case 12:
+		case 13:
+		case 14:
+		case 15:
+		case 16:
+		case 17:
+		case 18:
+		case 19:
 			mensaje = "Es la tarde"
 			break;
 		default:
