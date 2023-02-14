@@ -238,14 +238,62 @@ let final;
     descuento = 0;
 
     cantLamparas = document.getElementById("txtIdCantidad").value;
+    cantLamparas = parseInt(cantLamparas);
     marca = document.getElementById("Marca").value;
 
     
 
+switch (cantLamparas){
+    case 1:
+    case 2:
+        descuento = 0;
+        break;
+    case 3:
+        switch (marca)
+        {
+            case "ArgentinaLuz":
+                descuento = 15;
+                break;
+            case "FelipeLamparas":
+                descuento = 10;
+                break;
+            default: 
+                descuento = 5;
+        }break;
+    case 4:
+        switch (marca)
+        {
+            case "argentinaLuz":
+            case "FelipeLamparas":
+                descuento = 25;
+                break;
+            default:
+                descuento = 20;
+        }break;
+    case  5:
+        switch (marca)
+        {
+            case "argentinaLuz":
+                descuento = 40;
+        }break;
+    default:
+        descuento = 50;
 
+}
 
+precioTotal = precioLamp * cantLamparas;
+precioFinal = precioTotal * descuento/100;
+final = precioTotal - precioFinal;
 
+mensaje = "$ "+ final;
 
+impuesto = final * ingresoBruto /100;
+precioImpuesto = precioTotal + ingresoBruto;
+
+if( final >= 120){
+    alert ("Usted pago $ " + precioImpuesto + "  de IIBB, siento $ " + impuesto + " El impuesto que se pago");
+}
+document.getElementById("txtIdprecioDescuento").value=mensaje;
 
 }
 
