@@ -1,13 +1,22 @@
 function mostrar()
 {
-	var contador;
-	var acumulador;
-	var numeroIngresado;
+	let promedio;
+	let suma;
+	let numeroTres;
+	let numeroUno;
+	let numeroDos;
+	let numeroCuatro;
+	let numeroCinco;
 
-	contador=0;
-	acumulador=0;
+	numeroUno =parseInt(prompt("ingrese el primer numero"))
+	numeroDos =parseInt(prompt("ingrese el segundo numero"))
+	numeroTres =parseInt(prompt("ingrese el tercero numero"))
+	numeroCuatro=parseInt(prompt("ingrese el cuarto numero"))
+	numeroCinco=parseInt(prompt("ingrese el quinto numero"))
+
+	suma = numeroUno + numeroDos + numeroTres + numeroCuatro + numeroCinco;
 	
 	
-	txtIdSuma.value=acumulador;
-	txtIdPromedio.value=acumulador/5;
+	document.getElementById("txtIdSuma").value=suma;
+	document.getElementById("txtIdPromedio").value=suma/5;
 }//FIN DE LA FUNCIÓN

@@ -1,4 +1,4 @@
-/*
+/* /*
 al presionar el botón mostrar 125 repeticiones 
 con números ASCENDENTE, desde el 1 al 125
 a) contar numeros IMPARES
@@ -6,7 +6,7 @@ b) contar numeros PARES
 c) el total de los numeros impares.
 d) el total de los numeros impares.
 e) el mayor de los numeros impares*/
-function mostrar()
+/* function mostrar()
 {
 
 	let i;
@@ -22,7 +22,7 @@ function mostrar()
 	acumuladorNumerosImpares = 0;
 	mayorNumeroImpar = 1;
 
-	while (i < 125)
+	while (i < 125 && i > 10)
 {
 	if (i%2 != 0)
 	{
@@ -47,8 +47,33 @@ function mostrar()
 
 	console.log("La cantidad de numeros impares es: " +contadorNumeroimpares);
 	console.log("La cantidad de numeros pares es: " + contadorNumeroPares);
-	console.log("El total")
+	console.log("El total de la suma de los numeros impares: " + acumuladorNumerosImpares);
+	console.log ("El total de los numeros pares: " + acumuladorNumerosPares);
+	console.log ("El mayor de los numeros impares: " + mayorNumeroImpar)
 
 
-	alert('iteración while');
-}//FIN DE LA FUNCIÓN
+	alert('iteración while'); 
+}//FIN DE LA FUNCIÓN */
+
+//al presionar el botón mostrar 10 repeticiones con números ASCENDENTE, desde el 1 al 10.
+function mostrar()
+{
+
+	let i;
+
+	i = 0
+
+	while( i < 10)
+	{
+		i= i +1;
+
+		console.log (i)
+	}
+
+
+
+
+
+
+
+}
