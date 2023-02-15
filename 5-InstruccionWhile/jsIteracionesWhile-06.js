@@ -1,22 +1,30 @@
 function mostrar()
 {
+	
+	let acumulador;
+	let numeroIngresado;
+	let contador;
 	let promedio;
-	let suma;
-	let numeroTres;
-	let numeroUno;
-	let numeroDos;
-	let numeroCuatro;
-	let numeroCinco;
+		
+	acumulador = 0;
+	contador = 0;
 
-	numeroUno =parseInt(prompt("ingrese el primer numero"))
-	numeroDos =parseInt(prompt("ingrese el segundo numero"))
-	numeroTres =parseInt(prompt("ingrese el tercero numero"))
-	numeroCuatro=parseInt(prompt("ingrese el cuarto numero"))
-	numeroCinco=parseInt(prompt("ingrese el quinto numero"))
+//     variable        condicion    aumento/decremento
+	for(let i = 0;       i < 10;              i++ )
+	{
+		
+		numeroIngresado =parseInt(prompt("ingrese el primer numero"))
+		while (isNaN(numeroIngresado)){
 
-	suma = numeroUno + numeroDos + numeroTres + numeroCuatro + numeroCinco;
+			numeroIngresado =parseInt(prompt("ERROR:ingrese el primer numero" ))
+		}
+		contador = contador + 1
+	acumulador = acumulador + numeroIngresado;
+	//promedios y porcentajes afuera de while
+	}
 	
+	promedio = acumulador / contador;
 	
-	document.getElementById("txtIdSuma").value=suma;
-	document.getElementById("txtIdPromedio").value=suma/5;
+	document.getElementById("txtIdSuma").value=acumulador;
+	document.getElementById("txtIdPromedio").value=promedio;
 }//FIN DE LA FUNCIÓN

@@ -9,7 +9,7 @@ function mostrar()
 
 	numeroIngresado = prompt("ingrese un número entre 0 y 10.");
 	
-	while ( numeroIngresado < 0 || numeroIngresado > 10){
+	while ( isNaN (numeroIngresado) || numeroIngresado < -1 || numeroIngresado > 10){
 
 		numeroIngresado = prompt("ERROR: ingrese un número entre 0 y 10.");
 	}
