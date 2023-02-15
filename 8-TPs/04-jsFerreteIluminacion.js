@@ -221,7 +221,7 @@ function CalcularPrecio ()
 
 } */
 
-function CalcularPrecio ()
+/* function CalcularPrecio ()
 {
 
 let final;
@@ -263,7 +263,7 @@ switch (cantLamparas){
     case 4:
         switch (marca)
         {
-            case "argentinaLuz":
+            case "ArgentinaLuz":
             case "FelipeLamparas":
                 descuento = 25;
                 break;
@@ -273,7 +273,7 @@ switch (cantLamparas){
     case  5:
         switch (marca)
         {
-            case "argentinaLuz":
+            case "ArgentinaLuz":
                 descuento = 40;
         }break;
     default:
@@ -295,7 +295,7 @@ if( final >= 120){
 }
 document.getElementById("txtIdprecioDescuento").value=mensaje;
 
-}
+} */
 
 
 
