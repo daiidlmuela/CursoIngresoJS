@@ -30,8 +30,16 @@ se debe optener el apellido , de la manera que puedan */
 //ejercicio 5 bit
 
 let nombre;
-let
+let apellido;
+let anios;
+let mensaje;
 
+apellido = prompt ("Cual es su apellido?");
+
+nombre = document.getElementById("txtIdNombre").value 
+anios = document.getElementById("txtIdEdad").value 
+
+alert(apellido + " usted se llama " + nombre + " y tiene " + anios + " años.")
 
 
 

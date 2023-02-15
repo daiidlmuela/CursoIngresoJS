@@ -26,7 +26,8 @@ function sumar()
 }
 
 function restar()
-{let numUno;
+{
+	let numUno;
 	let numDos;
 	let mensaje;
 

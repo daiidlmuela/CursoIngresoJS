@@ -27,13 +27,11 @@ function mostrar()
 
 	porcentaje= 30;
 	descripcion = prompt("Ingrese descripcion del producto: ");
-	precio = document.getElementById("txtIdNombre").value;
+	precio = parseInt(document.getElementById("txtIdNombre")).value;
 
-	precio = parseInt(precio);
+	porcentaje = precio + porcentaje /100;
 
-	porcetaje = precio + porcentaje /100;
-
-	resultadoFinal= precio + porcentaje;
+	resultadoFinal = precio + porcentaje;
 
 	mensaje= (descripcion + " el precio es: " + resultadoFinal);
 

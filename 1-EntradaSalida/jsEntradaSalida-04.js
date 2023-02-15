@@ -7,12 +7,11 @@ function mostrar()
 	
 //declaro mi variable
 	let datoIngresado;
-	let cajita
 //pido dato
-	datoIngresado =prompt("Ingresar dato")
+	datoIngresado = prompt("Ingresar dato")
 
 //accedo a la cajita
-document.getElementById("txtIdNombre").value =datoIngresado
+	document.getElementById("txtIdNombre").value = datoIngresado
 
 	//alert("ok");
 }
