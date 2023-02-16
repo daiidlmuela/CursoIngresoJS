@@ -56,7 +56,7 @@ e) el mayor de los numeros impares*/
 }//FIN DE LA FUNCIÓN */
 
 //al presionar el botón mostrar 10 repeticiones con números ASCENDENTE, desde el 1 al 10.
-function mostrar()
+/* function mostrar()
 {
 
 	let i;
@@ -70,10 +70,59 @@ function mostrar()
 		console.log (i)
 	}
 
+} */
 
+function mostrar()
+{
+//While 1 bis- edad y nombre , informar el nombre de la persona mas vieja y la mas joven
 
+	let edad;
+	let edadMayor;
+	let edadMenor;
+	let nombre;
+	let nombreMayor;
+	let nombreMenor;
+	let banderaDelPrimero;
+	let respuesta;
+	let mensaje;
+	
+	respuesta = "si"
 
+	banderaDelPrimero = true 
 
+	while ( respuesta == "si")
+	{ 
+		nombre= prompt("Ingrese su nombre: ")
+		edad = parseInt(prompt("Ingrese su edad:" ))
 
+		while (edad < 0 || edad > 123 )
+		{
+			edad = parseInt(prompt("ERROR:Ingrese su edad:"))
+		}
+
+		if (banderaDelPrimero == true)
+		{
+		nombreMayor = nombre;
+		nombreMenor = nombre;
+		edadMayor = edad;
+		edadMenor = edad;
+		banderaDelPrimero = false
+		}
+		else if(edadMayor < edad)
+		{
+			nombreMayor = nombre;
+			edadMayor = edad;
+		}
+		else if (edadMenor = edad)
+		{
+			nombreMenor = nombre;
+			edadMenor = edad;
+		}
+		respuesta= prompt("Desea ingresar mas datos? si/no")
+	
+    }
+		mensaje = "la persona mas joven es : " + nombreMenor;
+		mensaje += "y persona mayor es: " + nombreMayor;
+		document.write  (mensaje);
 
 }
