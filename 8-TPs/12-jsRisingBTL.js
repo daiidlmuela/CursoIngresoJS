@@ -20,7 +20,7 @@ function ComenzarIngreso ()
 
 	edadIngresada = parseInt(prompt("Ingresar edad entre 18 y 90 años: "));
 
-	while (edadIngresada < 18 || edadIngresada > 90)
+	while (isNaN(edadIngresada) || edadIngresada < 18 || edadIngresada > 90)
 	{
 		edadIngresada = parseInt(prompt("ERROR:Ingresar edad entre 18 y 90 años: "));
 	}
@@ -44,11 +44,11 @@ function ComenzarIngreso ()
 		sueldoBruto = parseInt(prompt("ERROR:ingrese sueldo bruto, mayor a 8000."))
 	}
 
-	/* numeroLegajo = parseInt(prompt("Ingrese número de legajo, numérico de 4 cifras, sin ceros a la izquierda."))
-	while(numeroLegajo )
+	 numeroLegajo = parseInt(prompt("Ingrese número de legajo, numérico de 4 cifras, sin ceros a la izquierda."))
+	while(numeroLegajo < 1000)
 	{
-
-	} */
+		numeroLegajo = parseInt(prompt("ERROR:Ingrese número de legajo, numérico de 4 cifras, sin ceros a la izquierda."))
+	} 
 
 	 nacionalidad = prompt("Ingrese nacionalidad: “A” para argentinos, “E” para extranjeros, “N” para nacionalizados.")
 	while(nacionalidad != "A" && nacionalidad != "E" && nacionalidad != "N")
